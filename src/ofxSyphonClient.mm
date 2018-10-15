@@ -8,6 +8,9 @@
  */
 
 #include "ofxSyphonClient.h"
+
+#ifdef TARGET_OSX
+
 #import <Syphon/Syphon.h>
 #import "SyphonNameboundClient.h"
 
@@ -236,4 +239,4 @@ float ofxSyphonClient::getHeight()
 	return mTex.texData.height;
 }
 
-
+#endif

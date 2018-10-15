@@ -8,6 +8,9 @@
 //
 
 #include "ofMain.h"
+
+#ifdef TARGET_OSX
+
 #include <algorithm>
 
 class ofxSyphonServerDirectory;
@@ -81,3 +84,4 @@ private:
     vector<ofxSyphonServerDescription> serverList;
 };
 
+#endif

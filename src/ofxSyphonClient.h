@@ -8,6 +8,9 @@
  */
 
 #include "ofMain.h"
+
+#ifdef TARGET_OSX
+
 #include "ofxSyphon.h"
 
 class ofxSyphonClient {
@@ -56,3 +59,5 @@ class ofxSyphonClient {
 	bool bSetup;
     string appName, serverName;
 };
+
+#endif

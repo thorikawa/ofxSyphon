@@ -9,6 +9,8 @@
 
 #include "ofMain.h"
 
+#ifdef TARGET_OSX
+
 class ofxSyphonServer {
 	public:
 	ofxSyphonServer();
@@ -21,3 +23,6 @@ class ofxSyphonServer {
 	protected:
 	void *mSyphon;
 };
+
+#endif
+

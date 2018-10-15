@@ -8,6 +8,9 @@
  */
 
 #include "ofxSyphonServer.h"
+
+#ifdef TARGET_OSX
+
 #import <Syphon/Syphon.h>
 
 ofxSyphonServer::ofxSyphonServer()
@@ -115,3 +118,6 @@ void ofxSyphonServer::publishTexture(GLuint id, GLenum target, GLsizei width, GL
     [pool drain];
     
 }
+
+#endif
+

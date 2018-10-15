@@ -8,6 +8,9 @@
 //
 
 #include "ofxSyphonServerDirectory.h"
+
+#ifdef TARGET_OSX
+
 #import <Syphon/Syphon.h>
 
 // CFNotificationCallback implementation
@@ -209,3 +212,6 @@ bool ofxSyphonServerDirectory::CFStringRefToString(CFStringRef src, std::string 
     dest = cstr;
     return true;
 }
+
+#endif
+
