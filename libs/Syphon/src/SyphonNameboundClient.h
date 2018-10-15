@@ -43,6 +43,8 @@
 	the change in its own properties (and on to the object model and UI).
 */
 
+#ifdef __APPLE__
+
 #import <Cocoa/Cocoa.h>
 #import <libkern/OSAtomic.h>
 #import <Syphon/Syphon.h>
@@ -70,3 +72,5 @@
  */
 @property (readonly) SyphonClient *client;
 @end
+
+#endif

@@ -29,6 +29,8 @@
  
 #import "SyphonNameboundClient.h"
 
+#ifdef __APPLE__
+
 @interface SyphonNameboundClient (Private)
 - (void)setClientFromSearchHavingLock:(BOOL)isLocked;
 @end
@@ -277,3 +279,5 @@
 }
 
 @end
+
+#endif
